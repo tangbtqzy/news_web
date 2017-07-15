@@ -1,0 +1,10 @@
+en:
+  activerecord:
+    models:
+      new: New
+
+    attributes:
+      new:
+        title: Title
+        subtitle: subtitle
+        description: description

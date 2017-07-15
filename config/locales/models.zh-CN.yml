@@ -1,0 +1,10 @@
+zh-CN:
+  activerecord:
+    models:
+      new: 我的文章
+
+    attributes:
+      new:
+        title: 标题
+        subtitle: 副标题
+        description: 描述

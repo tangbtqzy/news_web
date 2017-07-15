@@ -1,5 +1,4 @@
-class WelcomeController < ApplicationController
+class WelcomeController < BaseController
   def index
-  	# binding.pry
   end
 end
