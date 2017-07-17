@@ -57,3 +57,15 @@ zh-CN:
     templements: 模板管理
     templement:
       publish:  系统模板
+  articles:
+    add_news: 发布文章
+    article_info: 文章信息
+    title: 标题
+    description: 简述
+    content: 内容
+    subtitle: 副标题
+    please_input_article_title: 请输入文章标题
+    please_input_article_description: 请简述文章
+    submit: 提交
+    edit: 编辑
+    delete: 删除

@@ -59,3 +59,15 @@ en:
     templements:  Templement Management
     templement:
       publish:  Templement
+  articles:
+    add_news: Publish Article
+    article_info: Article Info
+    title: Title
+    description: Description
+    content: Content
+    subtitle: Subtitle
+    please_input_article_title: Please enter the article title
+    please_input_article_description: Please make a short article description
+    submit: Submit
+    edit: Edit
+    delete: Delete

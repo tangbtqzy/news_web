@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  # get 'article/index'
+
   # get 'new/index'
 
   devise_for :users, :controllers => { sessions: 'devise/sessions' }, :path => '', :path_names => {:sign_in => 'login', :sign_out => 'logout'}
@@ -6,7 +8,7 @@ Rails.application.routes.draw do
   # get 'welcome/index'
   root 'welcome#index'
   
-  resources :welcome, :new do
+  resources :welcome, :new, :articles do
   end
   # get '/auth/:provider/callback', to: 'sessions#create'
 
