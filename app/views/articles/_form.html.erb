@@ -1,0 +1,65 @@
+<div id="page-content">
+  <div class="form-group">
+    <!-- Horizontal Form Block -->
+    <div class="col-xs-12">
+      <div class="block">
+          <!-- Horizontal Form Title -->
+          <div class="block-title">
+            <div class="block-options pull-right">
+              <a href="javascript:void(0)" class="btn btn-effect-ripple btn-default toggle-bordered enable-tooltip" data-toggle="button" ><%= t("articles.article_info") %></a>
+            </div>
+            <h2><%= t("articles.add_news") %></h2>
+          </div>
+          <!-- END Horizontal Form Title -->
+
+          <!-- Horizontal Form Content -->
+          <%= form_for(@article, html: {class: "form-horizontal form-bordered", onsubmit: "return true;"}) do |f| %>
+          <!-- <form action="page_forms_components.html" method="post" class="form-horizontal form-bordered" onsubmit="return false;"> -->
+            <div class="form-group">
+              <label class="col-md-1 control-label" for="example-hf-email"><%= t("articles.title") %></label>
+              <div class="col-md-9">
+                <%= f.text_field :name, class: "form-control" %>
+                <!-- <input type="text" id="title" name="title" class="form-control"> -->
+                <!-- <span class="help-block"><%#= t("articles.please_input_article_title") %></span> -->
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="col-md-1 control-label" for="example-hf-password-"><%= t("articles.subtitle") %></label>
+              <div class="col-md-9">
+                <%= f.text_field :sub_title, class: "form-control" %>
+                <!-- <input type="text" id="ttt" name="example-hf-password" class="form-control"> -->
+                <!-- <span class="help-block"><%#= t("articles.please_input_article_description") %></span> -->
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="col-md-1 control-label" for="example-hf-password-"><%= t("articles.description") %></label>
+              <div class="col-md-9">
+                <%= f.text_field :description, class: "form-control" %>
+                <!-- <input type="text" id="ttt" name="example-hf-password" class="form-control"> -->
+                <!-- <span class="help-block"><%#= t("articles.please_input_article_description") %></span> -->
+              </div>
+            </div>
+            <%= f.text_area(:content, :class => "ckeditor") %>
+            <!-- <textarea id="content" name="content" class="ckeditor"></textarea> -->
+            <div class="form-group form-actions">
+              <div class="col-md-9 col-md-offset-1">
+                <!-- <button type="submit" class="btn btn-effect-ripple btn-primary"><%#= t("articles.submit") %></button> -->
+                <%= f.submit t("articles.submit"), class: "btn btn-effect-ripple btn-primary" %>
+                <!-- <button type="reset" class="btn btn-effect-ripple btn-danger">Reset</button> -->
+              </div>
+            </div>
+          <!-- </form> -->
+          <% end %>
+          <!-- END Horizontal Form Content -->
+      </div>
+    </div>
+  </div>
+</div>
+<%= javascript_include_tag 'ckeditor', "formsComponents" %>
+<!-- Load and execute javascript code used only in this page -->
+<!-- <script src="js/pages/uiTables.js"></script> -->
+<script>
+  $(function(){ 
+    FormsComponents.init(); 
+  });
+</script>

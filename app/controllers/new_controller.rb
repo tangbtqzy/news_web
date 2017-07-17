@@ -1,5 +1,6 @@
 class NewController < ApplicationController
   def index
-  	@news = New.all
+  	@news = Article.all
+  	# binding.pry
   end
 end
