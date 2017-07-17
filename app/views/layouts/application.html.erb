@@ -23,12 +23,5 @@
   <p class="alert"><%= alert %></p>
 <% end %>
 <%= yield %>
-<!-- Load and execute javascript code used only in this page -->
-<script src="js/pages/readyDashboard.js"></script>
-<script>
-  <% unless params[:controller].include? "devise" %>
-    $(function(){ ReadyDashboard.init(); });
-  <% end %>
-</script>
 </body>
 </html>
