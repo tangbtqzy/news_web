@@ -22,6 +22,8 @@
 zh-CN:
   hello: "你好，ruby"
   web_title: "微帆工作室"
+  update_success: "修改成功."
+  update_failure: "修改失败."
   login:
     please_login: 用户登录
     please_input_user_name: 请输入用户名(邮箱)..

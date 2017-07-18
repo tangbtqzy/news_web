@@ -17,7 +17,7 @@ ActiveRecord::Schema.define(version: 20170717015545) do
   enable_extension "plpgsql"
   enable_extension "uuid-ossp"
 
-  create_table "articles", id: :uuid, default: "uuid_generate_v4()", force: true do |t|
+  create_table "articles", force: true do |t|
     t.string   "name"
     t.text     "content"
     t.string   "author"
@@ -40,7 +40,7 @@ ActiveRecord::Schema.define(version: 20170717015545) do
     t.datetime "updated_at"
   end
 
-  create_table "users", force: true do |t|
+  create_table "users", id: :uuid, default: "uuid_generate_v4()", force: true do |t|
     t.string   "email",                  default: "", null: false
     t.string   "encrypted_password",     default: "", null: false
     t.string   "name",                   default: "", null: false
