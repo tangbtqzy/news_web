@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  # get 'settings/index'
+
   # get 'article/index'
 
   # get 'new/index'
@@ -8,7 +10,7 @@ Rails.application.routes.draw do
   # get 'welcome/index'
   root 'welcome#index'
   
-  resources :welcome, :new, :articles do
+  resources :welcome, :new, :articles, :settings do
   end
   # get '/auth/:provider/callback', to: 'sessions#create'
 

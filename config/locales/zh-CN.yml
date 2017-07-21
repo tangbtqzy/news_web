@@ -71,3 +71,6 @@ zh-CN:
     submit: 提交
     edit: 编辑
     delete: 删除
+  whole:
+    system_config: 系统配置
+    basic: 基本配置

@@ -73,3 +73,6 @@ en:
     submit: Submit
     edit: Edit
     delete: Delete
+  whole:
+    system_config: System config
+    basic: Basic config
