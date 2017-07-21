@@ -1,0 +1,104 @@
+<!-- Page Wrapper -->
+<!-- In the PHP version you can set the following options from inc/config file -->
+<!--
+  Available classes:
+
+  'page-loading'      enables page preloader
+-->
+<div id="page-wrapper" class="page-loading">
+  <!-- Preloader -->
+  <!-- Preloader functionality (initialized in js/app.js) - pageLoading() -->
+  <!-- Used only if page preloader enabled from inc/config (PHP version) or the class 'page-loading' is added in #page-wrapper element (HTML version) -->
+    <%= render partial: "navs/preloader" %>
+    <!-- END Preloader -->
+
+    <!-- Page Container -->
+    <!-- In the PHP version you can set the following options from inc/config file -->
+    <!--
+        Available #page-container classes:
+
+        'sidebar-light'                                 for a light main sidebar (You can add it along with any other class)
+
+        'sidebar-visible-lg-mini'                       main sidebar condensed - Mini Navigation (> 991px)
+        'sidebar-visible-lg-full'                       main sidebar full - Full Navigation (> 991px)
+
+        'sidebar-alt-visible-lg'                        alternative sidebar visible by default (> 991px) (You can add it along with any other class)
+
+        'header-fixed-top'                              has to be added only if the class 'navbar-fixed-top' was added on header.navbar
+        'header-fixed-bottom'                           has to be added only if the class 'navbar-fixed-bottom' was added on header.navbar
+
+        'fixed-width'                                   for a fixed width layout (can only be used with a static header/main sidebar layout)
+
+        'enable-cookies'                                enables cookies for remembering active color theme when changed from the sidebar links (You can add it along with any other class)
+    -->
+    <div id="page-container" class="header-fixed-top sidebar-visible-lg-full">
+      <!-- Alternative Sidebar -->
+      <%= render partial: "navs/profile_and_setting" %>
+      <!-- END Alternative Sidebar -->
+
+        <!-- Main Sidebar -->
+      <div id="sidebar">
+          <!-- Sidebar Brand -->
+          <div id="sidebar-brand" class="themed-background">
+              <a href="index.html" class="sidebar-title">
+                  <i class="fa fa-cube"></i> <%= t("web_title") %> <!-- <span class="sidebar-nav-mini-hide">App<strong>UI</strong></span> -->
+              </a>
+          </div>
+          <!-- END Sidebar Brand -->
+
+          <!-- Wrapper for scrolling functionality -->
+          <div id="sidebar-scroll">
+              <!-- Sidebar Content -->
+              <div class="sidebar-content">
+                  <!-- Sidebar Navigation -->
+                  <%= render partial: "navs/nav" %>
+                  <!-- END Sidebar Navigation -->
+
+                  <!-- Color Themes -->
+                  <!-- Preview a theme on a page functionality can be found in js/app.js - colorThemePreview() -->
+                  <div class="sidebar-section sidebar-nav-mini-hide">
+                      <div class="sidebar-separator push">
+                          <i class="fa fa-ellipsis-h"></i>
+                      </div>
+                      <%= render partial: "navs/themes" %>
+                  </div>
+                  <!-- END Color Themes -->
+              </div>
+              <!-- END Sidebar Content -->
+          </div>
+          <!-- END Wrapper for scrolling functionality -->
+
+          <!-- Sidebar Extra Info -->
+          <div id="sidebar-extra-info" class="sidebar-content sidebar-nav-mini-hide">
+              <div class="push-bit">
+                  <span class="pull-right">
+                      <a href="javascript:void(0)" class="text-muted"><i class="fa fa-plus"></i></a>
+                  </span>
+                  <small><strong>78 GB</strong> / 100 GB</small>
+              </div>
+              <div class="progress progress-mini push-bit">
+                  <div class="progress-bar progress-bar-primary" role="progressbar" aria-valuenow="78" aria-valuemin="0" aria-valuemax="100" style="width: 78%"></div>
+              </div>
+              <div class="text-center">
+                  <small>Crafted with <i class="fa fa-heart text-danger"></i> by <a href="http://goo.gl/vNS3I" target="_blank">pixelcave</a></small><br>
+                  <small><span id="year-copy"></span> &copy; <a href="http://goo.gl/RcsdAh" target="_blank">AppUI 2.7</a></small>
+              </div>
+          </div>
+          <!-- END Sidebar Extra Info -->
+      </div>
+      <!-- END Main Sidebar -->
+
+        <!-- Main Container -->
+      <div id="main-container">
+          <!-- Header -->
+          <%= render partial: "navs/header" %>
+          <!-- END Header -->
+          <%= render "/navs/message" %>
+          <!-- Page content -->
+          <%= render partial: "list" %>
+          <!-- END Page Content -->
+      </div>
+      <!-- END Main Container -->
+    </div>
+    <!-- END Page Container -->
+</div>
