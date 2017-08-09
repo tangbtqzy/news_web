@@ -20,6 +20,22 @@
   <li>
     <a href="#" class="sidebar-nav-menu">
       <i class="fa fa-chevron-left sidebar-nav-indicator sidebar-nav-mini-hide"></i>
+      <!-- <i class="gi gi-airplane sidebar-nav-icon"></i> -->
+      <i class="fa fa-folder sidebar-nav-icon"></i>
+      <span class="sidebar-nav-mini-hide"><%= t("welcome.system_sources") %></span>
+    </a>
+    <ul>
+      <li>
+        <a href="<%= images_path %>"><%= t("welcome.system_source.pictures") %></a>
+      </li>
+      <li>
+        <a href="page_comp_todo.html"><%= t("welcome.system_source.pdf_files") %></a>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <a href="#" class="sidebar-nav-menu">
+      <i class="fa fa-chevron-left sidebar-nav-indicator sidebar-nav-mini-hide"></i>
       <i class="gi gi-airplane sidebar-nav-icon"></i><span class="sidebar-nav-mini-hide"><%= t("welcome.templements") %></span>
     </a>
     <ul>

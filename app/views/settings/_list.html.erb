@@ -1,8 +1,44 @@
 <div id="page-content">
-  <div class="col-xs-6">
-    123
+  <div class="col-xs-8">
+    <div class="block">
+      <form action="page_forms_components.html" method="post" class="form-bordered" onsubmit="return false;">
+        <div class="form-group">
+          <label for="example-nf-email"><%= t("settings.e_mail") %></label>
+          <input type="email" id="example-nf-email" name="example-nf-email" class="form-control">
+          <span class="help-block"><%= t("settings.please_input_the_email") %></span>
+        </div>
+        <div class="form-group">
+          <label for="example-nf-password"><%= t("settings.password") %></label>
+          <input type="password" id="example-nf-password" name="example-nf-password" class="form-control">
+          <span class="help-block"><%= t("settings.please_input_the_email_password") %></span>
+        </div>
+        <div class="form-group form-actions">
+          <button type="submit" class="btn btn-effect-ripple btn-primary"><%= t("settings.submit") %></button>
+          <!-- <button type="reset" class="btn btn-effect-ripple btn-danger">Reset</button> -->
+        </div>
+      </form>
+    </div>
   </div>
-  <div class="col-xs-6">
-    345
+  <div class="col-sm-4">
+    <a href="javascript:void(0)" class="widget">
+      <div class="widget-content text-center">
+        <%= image_tag "placeholders/avatars/avatar13@2x.jpg", class: "img-circle img-thumbnail img-thumbnail-avatar-2x" %>
+        <!-- <img src="placeholders/avatars/avatar13@2x.jpg" alt="avatar" class="img-circle img-thumbnail img-thumbnail-avatar-2x"> -->
+        <h2 class="widget-heading h3 text-muted">Anna Wigren</h2>
+      </div>
+      <div class="widget-content themed-background-muted text-dark text-center">
+        <strong>Logo Designer</strong>, Sweden
+      </div>
+      <div class="widget-content">
+        <div class="row text-center">
+          <div class="col-xs-6">
+            <h3 class="widget-heading"><i class="gi gi-briefcase text-info"></i> <br><small>35 Projects</small></h3>
+          </div>
+          <div class="col-xs-6">
+            <h3 class="widget-heading"><i class="gi gi-heart_empty text-danger"></i> <br><small>5.3k Likes</small></h3>
+          </div>
+        </div>
+      </div>
+    </a>
   </div>
 </div>
