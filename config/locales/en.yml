@@ -61,6 +61,10 @@ en:
     templements:  Templement Management
     templement:
       publish:  Templement
+    system_sources: System sources
+    system_source:
+      pictures:  Pictures
+      pdf_files: PDF files
   articles:
     add_news: Publish Article
     article_info: Article Info
@@ -76,3 +80,7 @@ en:
   whole:
     system_config: System config
     basic: Basic config
+  settings:
+    e_mail: system e-mail
+    password: password
+    submit: Submit

@@ -59,6 +59,10 @@ zh-CN:
     templements: 模板管理
     templement:
       publish:  系统模板
+    system_sources: 系统资源
+    system_source:
+      pictures:  图片资源
+      pdf_files: PDF文件
   articles:
     add_news: 发布文章
     article_info: 文章信息
@@ -74,3 +78,9 @@ zh-CN:
   whole:
     system_config: 系统配置
     basic: 基本配置
+  settings:
+    e_mail: 系统邮箱
+    password: 密码
+    please_input_the_email: 请输入系统邮箱账号
+    please_input_the_email_password: 请输入邮箱密码
+    submit: 提交
